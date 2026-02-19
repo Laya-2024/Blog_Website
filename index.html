@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">🌸 LayaBlog</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#articles">Articles</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="home">
+  <h1>Welcome to My World ✨</h1>
+  <p>Stories • Memories • Experiences</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+
+  <div class="about-container">
+    <p class="about-intro">
+      Hello 👋 I’m <strong>LayaSree</strong>, and welcome to my personal corner on the internet.
+      This blog is not just a website for me — it’s a collection of my thoughts,
+      memories, and moments that matter.
+    </p>
+
+    <p>
+      I enjoy expressing myself through writing, capturing memories through
+      photographs, and sharing stories from my life journey. From quiet personal
+      moments to joyful family trips and fun times with friends, every experience
+      has a story behind it.
+    </p>
+
+    <p>
+      Through this blog, I want to document my life, explore creativity, and
+      connect with people who enjoy meaningful stories and simple happiness.
+      I believe small moments often create the biggest memories.
+    </p>
+
+    <div class="about-highlights">
+      <div>📖 Writing & Storytelling</div>
+      <div>📸 Photography & Memories</div>
+      <div>✈️ Travel & Family Trips</div>
+      <div>💻 Learning & Creativity</div>
+    </div>
+  </div>
+</section>
+
+
+<section id="articles">
+  <h2>Articles</h2>
+  <div class="articles-container">
+    <div class="article-card">
+      <h3>My First Blog Journey</h3>
+      <p>How everything started...</p>
+      <a href="articles1.html">Read More →</a>
+    </div>
+
+    <div class="article-card">
+      <h3>Memories That Matter</h3>
+      <p>Moments I cherish forever...</p>
+      <a href="articles2.html">Read More →</a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterGallery('all')">All</button>
+    <button onclick="filterGallery('personal')">Personal</button>
+    <button onclick="filterGallery('family')">Family Trip</button>
+    <button onclick="filterGallery('friends')">Friends</button>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-card personal">
+      <img src="" class="gallery-item">
+    </div>
+
+    <div class="gallery-card family">
+      <img src="" class="gallery-item">
+    </div>
+
+    <div class="gallery-card friends">
+      <img src="" class="gallery-item">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 LayaBlog | Made with ❤️</p>
+</footer>
+
+
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
